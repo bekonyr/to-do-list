@@ -18,7 +18,7 @@ input.addEventListener("keydown", (el) => {
 });
 
 function addTask() {
-	if (input.value === "") {
+	if (input.value.trim() === "") {
 		err.innerHTML = "бош орунду толтурунуз";
 		err.style.color = "red";
 		input.placeholder = "бош орунду толтурунуз";
